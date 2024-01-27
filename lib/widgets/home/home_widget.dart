@@ -3,7 +3,7 @@ import 'dart:developer' as developer;
 
 import 'package:downloader_app/api/tiktok_api.dart';
 import 'package:downloader_app/models/Tiktok.dart';
-import 'package:downloader_app/widgets/home/guide_widget.dart';
+import 'package:downloader_app/widgets/home/recent_widget.dart';
 import 'package:downloader_app/widgets/home/result.dart';
 import 'package:downloader_app/widgets/text_field.dart';
 
@@ -142,7 +142,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       );
               } else {
                 return _isConnectionPresent()
-                    ? const GuideWidget()
+                    ? const RecentWidget()
                     : const Center(
                         child: Text("No network."),
                       );
