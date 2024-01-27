@@ -34,7 +34,13 @@ class _RecentWidgetState extends State<RecentWidget> {
               valueListenable: historyBox.listenable(),
               builder: (context, Box box, widget) {
                 if (box.isEmpty) {
-                  return const Center(child: Text("No history."));
+                  return const Center(
+                      child: Text(
+                    "No recent.",
+                    style: TextStyle(
+                      fontSize: 10.0,
+                    ),
+                  ));
                 } else {
                   int itemCount = box.length > 10 ? 10 : box.length;
                   return Column(
