@@ -36,8 +36,9 @@ class _RecentWidgetState extends State<RecentWidget> {
                 if (box.isEmpty) {
                   return const Center(child: Text("No history."));
                 } else {
+                  int itemCount = box.length > 10 ? 10 : box.length;
                   return Column(
-                    children: List.generate(box.length, (index) {
+                    children: List.generate(itemCount, (index) {
                       var currentBox = box;
                       var historyData =
                           currentBox.getAt(box.length - 1 - index)!;
