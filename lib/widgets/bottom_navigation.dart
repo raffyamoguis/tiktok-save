@@ -31,14 +31,12 @@ class _BottomNavigationState extends State<BottomNavigation> {
       selectedIndex: _currentIndex,
       destinations: const [
         NavigationDestination(
-          selectedIcon: Icon(Icons.home),
           icon: Icon(Icons.home_filled),
           label: "Home",
         ),
         NavigationDestination(
-          selectedIcon: Icon(Icons.history),
-          icon: Icon(Icons.history_outlined),
-          label: "History",
+          icon: Icon(Icons.download),
+          label: "Downloads",
         ),
       ],
     );
