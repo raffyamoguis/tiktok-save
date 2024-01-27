@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Tiktok Save',
+      title: 'TiktokSave',
       theme: ThemeData(
         colorScheme: colorScheme,
         fontFamily: GoogleFonts.outfit().fontFamily,
